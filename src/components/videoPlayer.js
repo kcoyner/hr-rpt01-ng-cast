@@ -1,9 +1,6 @@
 angular.module('video-player')
+  .component('videoPlayer', {
+    templateUrl: 'src/templates/videoPlayer.html',
 
-.component('videoPlayer', {
-  templateUrl: 'src/templates/videoPlayer.html',
-
-  controller: function() {
-  }
-});
-1
+    controller: function() {}
+  });
