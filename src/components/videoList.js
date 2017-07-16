@@ -3,10 +3,16 @@ angular.module('video-player')
     templateUrl: 'src/templates/videoList.html',
 
     controller: function() {
-      // console.log('this: ', this);
+
+      //console.log(this)
+      this.onClick = function(id) {
+        console.log('clicked', id);
+      };
     },
 
     bindings: {
       videos: '<'
+
+
     }
   });
