@@ -8,7 +8,7 @@ angular.module('video-player')
 
     bindings: {
       video: '<',
-      onSelect: '<'
+      onClick: '<'
     }
   });
 
