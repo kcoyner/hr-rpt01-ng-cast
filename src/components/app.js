@@ -4,12 +4,12 @@ angular.module('video-player')
     templateUrl: 'src/templates/app.html',
 
     controller: function() {
-     // console.log(this)
+      // console.log(this)
 
       this.videos = exampleVideoData;
       this.currentVideo = this.videos[0];
 
-      this.selectVideo= (vid) => {
+      this.selectVideo = (vid) => {
         console.log('clicked', vid);
         this.currentVideo = vid;
       };
@@ -17,6 +17,12 @@ angular.module('video-player')
       this.searchResults = () => {
 
       };
-    }
-  });
+    },
 
+    service: function(youTube) {
+      // get search results and set to currentVideo
+      //this.search
+    }
+
+
+  });
