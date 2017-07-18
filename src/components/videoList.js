@@ -5,14 +5,14 @@ angular.module('video-player')
     controller: function() {
 
       //console.log(this)
-      this.onClick = function(id) {
-        console.log('clicked', id);
-      };
+
     },
 
     bindings: {
-      videos: '<'
+      videos: '<',
+      onSelect: '<'
 
 
     }
   });
+
