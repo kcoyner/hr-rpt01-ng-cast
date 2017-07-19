@@ -4,7 +4,7 @@ angular.module('video-player')
     templateUrl: 'src/templates/app.html',
 
     controller: function() {
-      // console.log(this)
+     // console.log(this)
 
       this.videos = exampleVideoData;
       this.currentVideo = this.videos[0];
@@ -14,8 +14,9 @@ angular.module('video-player')
         this.currentVideo = vid;
       };
 
-      this.searchResults = () => {
-
+      this.searchResults = (query) => {
+        console.log(query);
+        console.log('searching');
       };
     },
 
@@ -26,3 +27,4 @@ angular.module('video-player')
 
 
   });
+
