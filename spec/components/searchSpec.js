@@ -47,9 +47,10 @@ describe('search', function() {
 
 
   // ADVANCED CONTENT TEST
-  xit('should have access to a search service within the scope', function() {
+  it('should have access to a search service within the scope', function() {
     expect(element.isolateScope().$ctrl.service).to.exist;
     expect(element.isolateScope().$ctrl.service).to.be.a('object');
   });
 
 });
+

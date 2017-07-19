@@ -4,7 +4,6 @@ angular.module('video-player')
     templateUrl: 'src/templates/app.html',
 
     controller: function(youTube) {
-
       this.videos = exampleVideoData;
       this.currentVideo = this.videos[0];
 
@@ -13,16 +12,12 @@ angular.module('video-player')
         this.currentVideo = vid;
       };
 
-      this.searchResults = (query) => {
-        console.log(query);
-        console.log('searching');
-        youTube.search(query, (items) => {
-          this.videos = items;
-          this.currentVideo = this.videos[0];
-        });
+      this.searchResults = (items) => {
+        this.videos = items;
+        this.currentVideo = this.videos[0];
       };
 
-      this.searchResults('angular.js');
+      youTube.search('angular', this.searchResults);
 
     },
 
