@@ -3,7 +3,6 @@ angular.module('video-player')
     templateUrl: 'src/templates/search.html',
     controller: function() {},
     bindings: {
-      result: '<',
-      service: '<'
+      result: '<'
     }
   });
